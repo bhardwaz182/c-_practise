@@ -11,13 +11,16 @@ int main(){
         cin>>arr[i];
     }
 
-    cout<<"Enter search number: "<<endl;
-    int search;
-    cin>>search;
+    int sum=0;
+
     for(int i=0;i<size;i++){
-        if(arr[i]==search){
-            cout<<"found the number";
-        }
+        sum+=arr[i];
     }
+
+    cout<<"Sum of all elements in the array is  "<<sum<<endl;
+
+    float avg=float(sum)/size;
+
+    cout<<"Average of all input numbers = "<<avg;
     return 0;
 }
