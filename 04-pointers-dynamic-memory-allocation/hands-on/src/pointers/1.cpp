@@ -8,4 +8,4 @@ int main(){
         cout<<&arr[i]<<" "<<*arr[i]<<endl;
     }
     return 0;
-}
+} 
