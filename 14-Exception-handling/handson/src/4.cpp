@@ -10,6 +10,9 @@ class Vector {
             int* newV=vc.A;
             int* a=v.A;
             for(int i=0;i<10;i++){
+                if(*a==0){
+                    throw "Division with zero";
+                }
                 *newV=*b/(*a);
                 newV++;
                 b++;
@@ -37,12 +40,17 @@ class Vector {
 };
 
 int main(){
-    int arr1[10]={1,2,3,4,5,6,7,8,9,10};
+    int arr1[10]={0,2,3,4,5,6,7,8,9,10};
     int arr2[10]={1,4,9,16,25,36,49,64,81,100};
     Vector fir(arr1);
     Vector sec(arr2);
     fir.Display();
     sec.Display();
-    Vector res=sec/fir;
-    res.Display();
+    try{
+        Vector res=sec/fir;
+        res.Display();
+    }catch(const char* msg){
+        cout<<msg;
+    }
+    
 }
