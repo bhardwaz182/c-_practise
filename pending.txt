@@ -1,0 +1,7 @@
+topics      project       handson
+unix            all       all
+c++ basics    -             3
+arrays        1.cleanup     -
+string        -            {3,9,10,11,12,15,16,17}
+pointer       all           -
+structure      all(2)      {8,9,10}
