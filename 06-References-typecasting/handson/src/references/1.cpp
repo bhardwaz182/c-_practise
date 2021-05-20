@@ -1,5 +1,5 @@
 #include<iostream>
-
+#include<sstream>
 using namespace std;
 
 int fact(int n){
@@ -12,9 +12,10 @@ int fact(int n){
     return n*fact(n-1);
 }
 
-int main(){
-    int n,fac;
-    cin>>n;
+int main(int argc,char *argv[]){
+    stringstream convert{ argv[1] };
+    int n{},fac;
+    convert>>n;
     fac=fact(n);
     
     if(fac){
