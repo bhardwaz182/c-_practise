@@ -1,0 +1,6 @@
+1) For initialization of non-static const data members
+2) For initialization of reference members
+3) For initialization of member objects which do not have default constructor
+4) For initialization of base class members 
+5) When constructor’s parameter name is same as data member 
+6) For Performance reasons
