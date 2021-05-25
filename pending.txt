@@ -1,6 +1,6 @@
 topics                         project                          handson
 unix                              -                               -
-c++ basics                       -                                3
+c++ basics                       -                                -
 arrays                           1.cleanup                        -
 string                           -                                -
 pointer                          all                              -
